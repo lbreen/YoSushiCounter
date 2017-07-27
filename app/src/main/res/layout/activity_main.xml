@@ -45,7 +45,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/green"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/green_btn" />
 
                 <Button
                     android:id="@+id/blueButton"
@@ -54,7 +54,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/blue"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/blue_btn" />
 
                 <Button
                     android:id="@+id/purpleButton"
@@ -63,7 +63,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/purple"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/purple_btn" />
 
                 <Button
                     android:id="@+id/orangeButton"
@@ -72,7 +72,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/orange"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/orange_btn" />
 
                 <Button
                     android:id="@+id/pinkButton"
@@ -81,7 +81,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/pink"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/pink_btn" />
 
                 <Button
                     android:id="@+id/greyButton"
@@ -90,7 +90,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/grey"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/grey_btn" />
 
                 <Button
                     android:id="@+id/yellowButton"
@@ -99,7 +99,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/yellow"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/yellow_btn" />
 
                 <Button
                     android:id="@+id/whiteButton"
@@ -108,7 +108,7 @@
                     android:layout_margin="12dp"
                     android:background="@color/white"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/white_btn" />
             </LinearLayout>
         </ScrollView>
 
