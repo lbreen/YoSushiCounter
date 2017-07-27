@@ -26,10 +26,10 @@
 
         <ScrollView
             android:layout_width="368dp"
-            android:layout_height="360dp"
+            android:layout_height="0dp"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp"
-            android:layout_weight="0.43">
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="368dp"
@@ -40,75 +40,75 @@
 
                 <Button
                     android:id="@+id/greenButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/green"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/green_btn" />
 
                 <Button
                     android:id="@+id/blueButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/blue"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/blue_btn" />
 
                 <Button
                     android:id="@+id/purpleButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/purple"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/purple_btn" />
 
                 <Button
                     android:id="@+id/orangeButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/orange"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/orange_btn" />
 
                 <Button
                     android:id="@+id/pinkButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/pink"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/pink_btn" />
 
                 <Button
                     android:id="@+id/greyButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/grey"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/grey_btn" />
 
                 <Button
                     android:id="@+id/yellowButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/yellow"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/yellow_btn" />
 
                 <Button
                     android:id="@+id/whiteButton"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="12dp"
                     android:background="@color/white"
                     android:onClick="addValue"
-                    android:text="£2.60" />
+                    android:text="@string/white_btn" />
             </LinearLayout>
         </ScrollView>
 
@@ -116,7 +116,7 @@
             android:id="@+id/displayedValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="£0.00"
+            android:text="@string/counter"
             android:gravity="center"
             android:paddingTop="12dp"
             android:textSize="@android:dimen/notification_large_icon_height" />
