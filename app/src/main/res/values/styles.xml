@@ -8,4 +8,13 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DishButton">
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:color">@color/green</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">addValue</item>
+    </style>
+
 </resources>
