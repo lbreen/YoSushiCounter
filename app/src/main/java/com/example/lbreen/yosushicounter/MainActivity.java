@@ -17,19 +17,20 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MyActivity";
 
-    int value = 0;
+    Double totalValue = 0.0;
 
     /** Called when the user taps the Calculate button */
     public void addValue(View view) {
         Button b = (Button)view;
         String buttonText = b.getText().toString();
-        int buttonValue = Integer.parseInt(buttonText);
-        Log.i(TAG, Integer.toString(buttonValue));
+        String[] array = buttonText.split("£");
+        Double buttonValue = Double.parseDouble(array[1]);
+        totalValue += buttonValue;
+        Log.i(TAG, Double.toString(totalValue));
     }
-}
 
-//    public void onClick(View v) {
-//        // 1) Possibly check for instance of first
-//        Button b = (Button)v;
-//        String buttonText = b.getText().toString();
-//    }
+    public void displayValue(View view){
+
+    }
+
+}
