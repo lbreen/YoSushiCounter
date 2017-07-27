@@ -1,5 +1,6 @@
 package com.example.lbreen.yosushicounter;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,8 +44,12 @@ public class MainActivity extends AppCompatActivity {
         displayValue(totalValue);
     }
 
-    public void review() {
-        // Open review tab
+    public void review(View view) {
+        Intent intent = new Intent(this, ReviewActivity.class);
+//        EditText editText = (EditText) findViewById(R.id.editText);
+//        String message = editText.getText().toString();
+//        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
     }
 
 }
