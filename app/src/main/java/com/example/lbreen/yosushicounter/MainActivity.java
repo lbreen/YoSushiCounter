@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import static android.R.id.message;
 import static com.example.lbreen.yosushicounter.R.styleable.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,22 +17,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private static final String TAG = "MyActivity";
-
     Double totalValue = 0.0;
 
-    /** Called when the user taps the Calculate button */
+    /**
+     * Called when the user taps the Calculate button
+     */
     public void addValue(View view) {
-        Button b = (Button)view;
+        Button b = (Button) view;
         String buttonText = b.getText().toString();
         String[] array = buttonText.split("£");
         Double buttonValue = Double.parseDouble(array[1]);
         totalValue += buttonValue;
-        Log.i(TAG, Double.toString(totalValue));
+        displayValue(view);
     }
 
-    public void displayValue(View view){
-
+    public void displayValue(View view) {
+        String formattedValue = String.format("%.2f", totalValue);
+        TextView textView = (TextView) findViewById(R.id.displayedValue);
+        textView.setText("£" + formattedValue);
     }
 
 }
