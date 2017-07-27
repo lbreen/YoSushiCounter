@@ -24,17 +24,16 @@ public class MainActivity extends AppCompatActivity {
      */
     public void addValue(View view) {
         Button b = (Button) view;
-        String buttonText = b.getText().toString();
-        String[] array = buttonText.split("£");
-        Double buttonValue = Double.parseDouble(array[1]);
-        totalValue += buttonValue;
-        displayValue(view);
+        String[] buttonText = b.getText().toString().split("£"); // Retrieve the btn text and remove '£' symbol => [ , #{value}]
+        Double buttonValue = Double.parseDouble(buttonText[1]); // Convert btn value from string to double (float)
+        totalValue += buttonValue; // Increment the total value
+        displayValue(view); // Display value to screen
     }
 
     public void displayValue(View view) {
-        String formattedValue = String.format("%.2f", totalValue);
-        TextView textView = (TextView) findViewById(R.id.displayedValue);
-        textView.setText("£" + formattedValue);
+        String formattedValue = String.format("%.2f", totalValue); // Format to 2 d.p.
+        TextView textView = (TextView) findViewById(R.id.displayedValue); // Retrieve the target text view
+        textView.setText("£" + formattedValue); // Set text of target text view
     }
 
 }
